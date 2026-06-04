@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+.hero{
+    background-image: url("herolandingpagebg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
+.topbar{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: rgba(0,0,0,0.4);
+    backdrop-filter: blur(4px);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 60px;
+    font-size: 14px;
+}
+.left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.right{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.right div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.navbar{
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    z-index: 100;
+    background-color: rgba(255, 49, 49, 0.75);
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+}
+.logo{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 42px;
+    letter-spacing: 3px;
+    color: white;
+    transition: 0.3s;
+}
+.logo:hover{
+    color: black;
+}
+.nav ul{
+    display: flex;
+    gap: 35px;
+    list-style: none;
+}
+.nav ul li{
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.nav ul li:hover{
+    color: black;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.content{
+    width: 70%;
+    color: white;
+    margin-top: 80px;
+}
+.content h4{
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.content h1{
+    font-family: "Anton", sans-serif;
+    font-size: 100px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+.content p{
+    font-size: 17px;
+    line-height: 1.8;
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+.content h3{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 35px;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.buttons button{
+    padding: 14px 32px;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.buttons button:hover{
+    background-color: white;
+    color: black;
+    transform: scale(1.09);
+    box-shadow: 6px 6px 6px 6px rgba(92, 74, 74, 0.55);
+    border-radius: 8px;
+}
